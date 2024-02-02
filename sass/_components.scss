@@ -1,0 +1,19 @@
+@use './utils' as u;
+@use './variables' as v;
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.wrapper {
+  width: min(v.$content-max-width, 100% - 4rem);
+  margin-inline: auto;
+}
+
+a.button {}
+
+a:hover.button {}
