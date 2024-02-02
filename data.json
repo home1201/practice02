@@ -1,30 +1,30 @@
 [
   {
-    "day": "mon",
-    "amount": 17.45
+    "day": "월",
+    "amount": 17450
   },
   {
-    "day": "tue",
-    "amount": 34.91
+    "day": "화",
+    "amount": 34900
   },
   {
-    "day": "wed",
-    "amount": 52.36
+    "day": "수",
+    "amount": 52360
   },
   {
-    "day": "thu",
-    "amount": 31.07
+    "day": "목",
+    "amount": 11070
   },
   {
-    "day": "fri",
-    "amount": 23.39
+    "day": "금",
+    "amount": 23000
   },
   {
-    "day": "sat",
-    "amount": 43.28
+    "day": "토",
+    "amount": 4300
   },
   {
-    "day": "sun",
-    "amount": 25.48
+    "day": "일",
+    "amount": 15400
   }
 ]

@@ -2,10 +2,31 @@
 
 //CSS Variables
 :root {
-  //Color
+  //Main Color
+  --color-soft-red: hsl(10, 79%, 65%);
+  --color-cyan: hsl(186, 34%, 60%);
+  --color-content-background: hsl(33, 100%, 98%);
+
+  //Neutral Color
+  --color-text-dark: hsl(25, 47%, 15%);
+  --color-text-base: hsl(28, 10%, 53%);
+  --color-background: hsl(27, 66%, 92%);
 
   //Font
+  --font-size-sm: clamp(0.9rem, 0.08vw + 0.88rem, 0.94rem);
+  --font-size-base: clamp(1.13rem, 0.25vw + 1.07rem, 1.25rem);
+  --font-size-md: clamp(1.41rem, 0.53vw + 1.28rem, 1.67rem);
+  --font-size-lg: clamp(1.76rem, 0.94vw + 1.54rem, 2.22rem);
+  --font-size-xl: clamp(2.2rem, 1.56vw + 1.83rem, 2.96rem);
+  --font-size-xxl: clamp(2.75rem, 2.45vw + 2.17rem, 3.95rem);
+  --font-size-xxxl: clamp(3.43rem, 3.73vw + 2.56rem, 5.26rem);
+
+  --font-weight-base: 400;
+  --font-weight-bold: 700;
+
+  --border-radius: 20px;
 }
 
 // //Sass Variables
-$content-max-width: u.em(375);
+$content-min-width: u.em(375);
+$content-max-width: u.em(550);

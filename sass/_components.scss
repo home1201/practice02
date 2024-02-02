@@ -10,10 +10,6 @@
 }
 
 .wrapper {
-  width: min(v.$content-max-width, 100% - 4rem);
+  width: clamp(v.$content-min-width, 70%, v.$content-max-width);
   margin-inline: auto;
 }
-
-a.button {}
-
-a:hover.button {}

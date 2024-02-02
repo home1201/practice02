@@ -3,13 +3,57 @@
 
 <head>
   <meta charset="UTF-8" />
-  <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+  <link rel="icon" type="image/png" href="/images/favicon-32x32.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script type="module" src="/main.js"></script>
   <title>네 번째 연습</title>
 </head>
 
-<body>
+<body class="flex">
+  <header class="header wrapper grid">
+    <h2 class="header__heading">나의 통장 잔고</h2>
+    <div class="header__balance" data-balance>0,000,000원</div>
+    <img class="header__logo" src="images/logo.svg" alt="">
+  </header>
+  <main class="main wrapper">
+    <h1 class="main__heading">지난 일주일 소비내역</h1>
+    <section class="main__graph">
+      <div class="main__graph-item" data-item>
+        <div class="main__amount" data-amount>00,000원</div>
+        <div class="main__day" data-day>ㅁ</div>
+      </div>
+      <div class="main__graph-item" data-item>
+        <div class="main__amount" data-amount>00,000원</div>
+        <div class="main__day" data-day>ㅁ</div>
+      </div>
+      <div class="main__graph-item" data-item>
+        <div class="main__amount" data-amount>00,000원</div>
+        <div class="main__day" data-day>ㅁ</div>
+      </div>
+      <div class="main__graph-item" data-item>
+        <div class="main__amount" data-amount>00,000원</div>
+        <div class="main__day" data-day>ㅁ</div>
+      </div>
+      <div class="main__graph-item" data-item>
+        <div class="main__amount" data-amount>00,000원</div>
+        <div class="main__day" data-day>ㅁ</div>
+      </div>
+      <div class="main__graph-item" data-item>
+        <div class="main__amount" data-amount>00,000원</div>
+        <div class="main__day" data-day>ㅁ</div>
+      </div>
+      <div class="main__graph-item" data-item>
+        <div class="main__amount" data-amount>00,000원</div>
+        <div class="main__day" data-day>ㅁ</div>
+      </div>
+    </section>
+    <section class="total wrapper">
+      <h2 class="total__heading">이 달의 지출액</h2>
+      <div class="total__amount" data-month-amount>000,000원</div>
+      <div class="total__ratio-text">지난 달 대비 증감비</div>
+      <div class="total__ratio" data-ratio>+0.00%</div>
+    </section>
+  </main>
 </body>
 
 </html>

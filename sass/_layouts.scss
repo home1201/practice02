@@ -1,0 +1,33 @@
+.header {
+  grid-auto-flow: column;
+  grid-template: 1fr 1fr / 1fr 1fr;
+  background-color: var(--color-soft-red);
+  margin-bottom: 2rem;
+  border-radius: var(--border-radius);
+  color: var(--color-content-background);
+  padding: 1rem 2rem;
+  align-items: center;
+  justify-content: space-between;
+
+  &__logo {
+    grid-row: span 2;
+    justify-self: end;
+    height: 90%;
+  }
+
+  &__heading {
+    font-weight: var(--font-weight-base);
+    font-size: var(--font-size-base);
+  }
+
+  &__balance {
+    margin-top: -0.3rem;
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-md);
+  }
+}
+
+.main {
+  background-color: var(--color-content-background);
+  border-radius: var(--border-radius);
+}

@@ -1,13 +1,7 @@
 @use 'utils' as u;
+@use 'variables' as v;
 
-//CSS Variables
-:root {
-  //Color
-
-  //Font
-}
-
-//Sass Variables
+@import url("https://cdn.jsdelivr.net/gh/wanteddev/wanted-sans@v1.0.1/packages/wanted-sans/fonts/webfonts/variable/split/WantedSansVariable.min.css");
 
 //Reset
 *,
@@ -23,25 +17,29 @@ html {
 }
 
 body {
-  // font-family: 'Inter', system-ui, sans-serif;
-  // color: var(--color-gray-400);
-  // line-height: 1.6;
-  // font-size: var(--font-scale-400);
+  font-family: "Wanted Sans Variable", "Wanted Sans", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  color: var(--color-text-base);
+  line-height: 1.6;
+  font-size: var(--font-scale-base);
+  background-color: var(--color-background);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100svh;
 }
 
 a,
 a:link,
 a:visited {
   text-decoration: none;
-  // color: inherit;
+  color: inherit;
 }
 
 h1 {
-  // font-family: 'Inter', sans-serif;
-  // color: var(--color-gray-800);
-  // font-size: var(--font-scale-900);
-  // font-weight: var(--font-weight-exbold);
-  // line-height: 1.15;
+  font-family: inherit;
+  color: var(--color-gray-800);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
 }
 
 ul,
