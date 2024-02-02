@@ -15,21 +15,3 @@
   height: auto;
   width: max-content;
 }
-
-@mixin mq-mobile {
-  @media screen and (width < #{v.$breakpoint-tablet}) {
-    @content;
-  }
-}
-
-@mixin mq-tablet {
-  @media screen and (#{v.$breakpoint-tablet} <= width < #{v.$breakpoint-desktop}) {
-    @content;
-  }
-}
-
-@mixin mq-desktop {
-  @media screen and (width >=#{v.$breakpoint-desktop}) {
-    @content;
-  }
-}
