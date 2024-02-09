@@ -22,10 +22,6 @@ body {
   line-height: 1.6;
   font-size: var(--font-scale-base);
   background-color: var(--color-background);
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100svh;
 }
 
 a,
@@ -45,4 +41,15 @@ h1 {
 ul,
 ol {
   list-style: none;
+}
+
+table {
+  border-spacing: 0;
+  table-layout: fixed;
+  width: 100%
+}
+
+table>* {
+  position: relative;
+  top: 1px
 }

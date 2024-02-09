@@ -3,55 +3,53 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/png" href="/images/favicon-32x32.png" />
+  <link rel="icon" type="image/png" href="./assets/favicon-32x32.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script type="module" src="/main.js"></script>
   <title>네 번째 연습</title>
+  <script type="module" src="main.js"></script>
 </head>
 
-<body class="flex">
-  <header class="header wrapper grid">
-    <h2 class="header__heading">나의 통장 잔고</h2>
-    <div class="header__balance" data-balance>0,000,000원</div>
-    <img class="header__logo" src="images/logo.svg" alt="">
-  </header>
-  <main class="main wrapper">
-    <h1 class="main__heading">지난 일주일 소비내역</h1>
-    <section class="main__graph">
-      <div class="main__graph-item" data-item>
-        <div class="main__amount" data-amount>00,000원</div>
-        <div class="main__day" data-day>ㅁ</div>
+<body>
+  <main class="wrapper main">
+    <header class="header grid">
+      <h2 class="header__caption">나의 통장 잔고</h2>
+      <div class="header__balance" data-balance>0,000,000원</div>
+      <img class="header__logo"
+        src="data:image/svg+xml,%3csvg%20width='72'%20height='48'%20viewBox='0%200%2072%2048'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20fill='none'%20fill-rule='evenodd'%3e%3ccircle%20fill='%23382314'%20cx='48'%20cy='24'%20r='24'/%3e%3ccircle%20stroke='%23FFF'%20stroke-width='2'%20cx='24'%20cy='24'%20r='23'/%3e%3c/g%3e%3c/svg%3e"
+        alt="">
+    </header>
+    <table class="graph">
+      <caption class="graph__caption">지난 일주일 소비내역</caption>
+      <thead>
+        <tr class="graph__head">
+          <th class="graph__day" data-day>일</th>
+          <th class="graph__day" data-day>월</th>
+          <th class="graph__day" data-day>화</th>
+          <th class="graph__day" data-day>수</th>
+          <th class="graph__day" data-day>목</th>
+          <th class="graph__day" data-day>금</th>
+          <th class="graph__day" data-day>토</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="graph__body" data-max-height="10">
+          <td class="graph__value" data-value>00,000원</td>
+          <td class="graph__value" data-value>00,000원</td>
+          <td class="graph__value" data-value>00,000원</td>
+          <td class="graph__value" data-value>00,000원</td>
+          <td class="graph__value graph__value--highest" data-value>00,000원</td>
+          <td class="graph__value" data-value>00,000원</td>
+          <td class="graph__value" data-value>00,000원</td>
+        </tr>
+      </tbody>
+    </table>
+    <section class="total grid">
+      <h2 class="total__caption">이 달의 지출액</h2>
+      <div class="total__expense" data-month-amount>000,000원</div>
+      <div class="total__comparison">지난 달에 비해 <br>
+        <span class="total__ratio" data-ratio>0.00% 더</span>
+        사용하셨어요.
       </div>
-      <div class="main__graph-item" data-item>
-        <div class="main__amount" data-amount>00,000원</div>
-        <div class="main__day" data-day>ㅁ</div>
-      </div>
-      <div class="main__graph-item" data-item>
-        <div class="main__amount" data-amount>00,000원</div>
-        <div class="main__day" data-day>ㅁ</div>
-      </div>
-      <div class="main__graph-item" data-item>
-        <div class="main__amount" data-amount>00,000원</div>
-        <div class="main__day" data-day>ㅁ</div>
-      </div>
-      <div class="main__graph-item" data-item>
-        <div class="main__amount" data-amount>00,000원</div>
-        <div class="main__day" data-day>ㅁ</div>
-      </div>
-      <div class="main__graph-item" data-item>
-        <div class="main__amount" data-amount>00,000원</div>
-        <div class="main__day" data-day>ㅁ</div>
-      </div>
-      <div class="main__graph-item" data-item>
-        <div class="main__amount" data-amount>00,000원</div>
-        <div class="main__day" data-day>ㅁ</div>
-      </div>
-    </section>
-    <section class="total wrapper">
-      <h2 class="total__heading">이 달의 지출액</h2>
-      <div class="total__amount" data-month-amount>000,000원</div>
-      <div class="total__ratio-text">지난 달 대비 증감비</div>
-      <div class="total__ratio" data-ratio>+0.00%</div>
     </section>
   </main>
 </body>
