@@ -46,10 +46,15 @@ ol {
 table {
   border-spacing: 0;
   table-layout: fixed;
-  width: 100%
-}
+  width: 100%;
 
-table>* {
-  position: relative;
-  top: 1px
+  >* {
+    position: relative;
+    top: 1px;
+  }
+
+  td {
+    min-width: 0;
+  }
+
 }

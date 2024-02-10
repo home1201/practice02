@@ -77,6 +77,7 @@
 
   &__value {
     position: relative;
+    overflow-x: clip;
     height: 10rem;
 
     &:before {
@@ -109,7 +110,7 @@
 }
 
 .total {
-  grid-template: 1fr 1fr/1fr 1fr;
+  grid-template: 1fr 1fr/4fr 6fr;
   grid-auto-flow: column;
   position: relative;
   top: -1px;

@@ -10,5 +10,5 @@
 }
 
 .wrapper {
-  width: clamp(v.$content-min-width, 70%, v.$content-max-width);
+  width: clamp(v.$content-min-width, 100% - 2rem, v.$content-max-width);
 }
