@@ -1,4 +1,8 @@
-[
+{
+  "balance" : 2930100,
+  "monthExpense" : 790000,
+  "preMonthExpense" : 670000,
+  "weekExpense" : [
   {
     "day": "월",
     "amount": 17450
@@ -27,4 +31,5 @@
     "day": "일",
     "amount": 15400
   }
-]
+  ],
+}
