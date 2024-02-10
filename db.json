@@ -1,0 +1,44 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "expense data",
+      "balance": 2930100,
+      "monthExpense": 790000,
+      "preMonthExpense": 670000,
+      "weekExpense": [
+        {
+          "day": "월",
+          "amount": 17450
+        },
+        {
+          "day": "화",
+          "amount": 34900
+        },
+        {
+          "day": "수",
+          "amount": 52360
+        },
+        {
+          "day": "목",
+          "amount": 11070
+        },
+        {
+          "day": "금",
+          "amount": 23000
+        },
+        {
+          "day": "토",
+          "amount": 4300
+        },
+        {
+          "day": "일",
+          "amount": 15400
+        }
+      ]
+    }
+  ],
+  "profile": {
+    "name": "home1201"
+  }
+}
