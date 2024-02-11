@@ -65,20 +65,22 @@
   }
 
   &__body {
-    overflow: hidden;
+    overflow-y: clip;
     height: 14rem;
     align-items: flex-end;
   }
 
   &__day {
     padding-top: .5rem;
-    font-weight: var(--font-weight-base)
+    font-weight: var(--font-weight-base);
+    width: 7ch;
   }
 
   &__value {
     position: relative;
-    overflow-x: clip;
+    // overflow-x: clip;
     height: 10rem;
+    width: 7ch;
 
     &:before {
       overflow: visible;
@@ -96,15 +98,18 @@
     }
 
     &:hover::after {
-      content: "";
+      content: attr(data-value);
       position: absolute;
       top: -3.5rem;
       left: 50%;
       transform: translateX(-50%);
       background-color: var(--color-text-dark);
       color: var(--color-content-background);
-      padding: 0.5rem 1rem;
+      padding: 0.5rem;
       border-radius: var(--border-radius-little);
+      width: 8.5ch;
+      text-align: center;
+      z-index: 1;
     }
   }
 }

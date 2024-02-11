@@ -1,13 +1,19 @@
 export default class DataFetcher {
   #jsonData = null;
+  #weekExpenses = null;
 
   async init(url) {
     const res = await fetch(url);
     this.#jsonData = await res.json();
+
+    this.#weekExpenses = new Map();
+    this.#jsonData['weekExpense'].forEach(el => {
+      this.#weekExpenses.set(el.day, el.amount);
+    })
   }
 
   getDayAmount(day) {
-    return this.#jsonData['weekExpense'].find((el) => el.day === day).amount;
+    return this.#weekExpenses.get(day);
   }
 
   getBalance() {
@@ -20,6 +26,10 @@ export default class DataFetcher {
 
   getPreMonthExpense() {
     return this.#jsonData['preMonthExpense'];
+  }
+
+  getWeekExpenses() {
+    return this.#jsonData['weekExpense'];
   }
 
 }

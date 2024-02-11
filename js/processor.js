@@ -32,4 +32,18 @@ export default class DataProcessor {
   getMonthExpenseText() {
     return this.#getMoneyText(this.#fetcher.getMonthExpense());
   }
+
+  getHighestExpenseDay() {
+    const dayExpenseArr = this.#fetcher.getWeekExpenses();
+    let maxExpenseDay = "";
+    let maxExpense = 0;
+
+    dayExpenseArr.forEach(el => {
+      if (maxExpense >= el.amount) return;
+      maxExpense = el.amount;
+      maxExpenseDay = el.day;
+    });
+
+    return maxExpenseDay;
+  }
 }
