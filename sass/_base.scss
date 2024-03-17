@@ -43,6 +43,16 @@ ol {
   list-style: none;
 }
 
+button {
+  all: unset;
+}
+
+input,
+textarea {
+  min-width: 0;
+  // flex 컨테이너에서 width: 100%로 설정해서 사용
+}
+
 table {
   border-spacing: 0;
   table-layout: fixed;
